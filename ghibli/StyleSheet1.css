@@ -1,0 +1,733 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+
+
+ .first{
+     top:0px;
+     height:50px;
+     border-bottom:1px solid #FEFEF7;
+    position: relative;
+    vertical-align: middle ;
+ 
+    
+ }
+ .first h1{
+    margin: 0;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+ }
+ .quote{
+     font-family: 'Lato', sans-serif ;
+     font-weight:lighter;
+     font-size:1.3em;
+     text-align:center;
+     color:#FEFEF7;
+     margin-top:20px;
+        
+     left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+ }
+h1 {
+    font-family: 'Lato', sans-serif;
+     font-weight:normal;
+     font-size:1.5em;
+     text-align:center;
+     color:#FEFEF7;
+     text-decoration:none;
+}
+h1 > a {
+  position: relative;
+  color: #FEFEF7;
+  text-decoration: none;
+}
+
+h1 > a:hover {
+  color: #FEFEF7;
+}
+h1 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #FEFEF7;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.6s ease-in-out 0s;
+  transition: all 0.6s ease-in-out 0s;
+}
+h1 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.home{
+    position:fixed;
+    margin-left:0px;
+    width:15.5%;
+  border-right:1px solid #191918; 
+    height:100%;
+      font-family: 'Lato', sans-serif;
+      background-color:rgba(254,254,247,0.75);
+      z-index:2;
+   
+      
+       
+ 
+}
+.homeimg{
+    width:100%;
+    padding-top:35px;
+    padding-bottom:35px;
+    
+ 
+}
+ li{
+    font-family: 'Lato', sans-serif;
+     padding-bottom:30px;
+     padding-top:30px;
+     font-size:2em;
+     text-align:center;
+     color:#191918;
+     font-weight:200;
+
+}
+ li {
+  position: relative;
+  color: #FEFEF7;
+  text-decoration: none;
+}
+
+ 
+ul{
+    list-style:none;
+}
+.main img {
+    position: absolute;
+    margin-left: 0px;
+    width: 100%;
+      background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height: 100%;
+ 
+   
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+    font-family: 'Lato', sans-serif;
+    z-index:-1;
+}
+.main{
+      
+  margin-left: 0px;
+    width: 100%;
+     height: 100%;
+}
+.maintext{
+      position:absolute;
+  margin-left:15.5%;
+    width: 84.5%;
+     height: 100%;
+      /*background: #e9eced;*/
+       font-family: 'Lato', sans-serif;
+}
+.maintex{
+      position:absolute;
+  margin-left:15.5%;
+    width: 84.5%;
+     height: 100%;
+      /*background: #e9eced;*/
+       font-family: 'Lato', sans-serif;
+}
+  @keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+ 
+.top {
+ animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+ 
+}
+ 
+ 
+ 
+  ul li {
+     color:#191918;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:0.3s,background 0.6s ease-in;
+  -ms-transition:0.3s,background 067s ease-in;
+  -moz-transition:0.3s,background 0.6s ease-in;
+  -webkit-transition:0.3s,background 0.6s ease-in;
+  /* ...and now for the proper property */
+  transition:0.3s,background 0.6s ease-in;
+}
+   
+  
+.blue:hover { color:#FEFEF7;
+              background-color:rgba(9,123,124,0.8)
+
+             
+}
+ 
+.yellow:hover { color:#FEFEF7;
+              background-color:#E6BC26;
+               background-color:rgba(230,188,38,0.8);
+             
+}
+.homefilm .yellow:hover { color:#FEFEF7;
+              background-color:#E6BC26;
+               background-color:rgba(230,188,38,0);
+             
+}
+.red:hover { color:#FEFEF7;
+              background-color:#BC6A68;
+               background-color:rgba(188,106,104,0.8);
+
+             
+}
+.homeart .red:hover { color:#FEFEF7;
+              background-color:#BC6A68;
+               background-color:rgba(188,106,104,0);
+
+             
+}
+.purple:hover { color:#FEFEF7;
+              background-color:#3C0F48;
+               background-color:rgba(186,172,230,0.8);
+             
+}
+.green:hover { color:#FEFEF7;
+              background-color:#8DC971;
+               background-color:rgba(141,201,113,0.8);
+             
+}
+.homemanga .green:hover{
+      background-color:rgba(141,201,113,0);
+
+}
+.homebio .purple:hover{
+     background-color:rgba(230,109,39,0);
+}
+ 
+ a li{
+     text-decoration:none;
+ }
+ 
+ 
+ .homeimg {
+  color:#191918;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:0.3s,background 0.5s ease-in;
+  -ms-transition:0.3s,background 0.5s ease-in;
+  -moz-transition:0.3s,background 0.5s ease-in;
+  -webkit-transition:0.3s,background 0.5s ease-in;
+  /* ...and now for the proper property */
+  transition:0.3s,background 0.5s ease-in;
+}
+ .homeimg:hover {  
+              background-color:#FBCDC1;
+               background-color:rgba(173,152,130,0.8);
+             
+             
+}
+ .hometext .homeimg:hover{
+     background-color:rgba(173,152,130,0)
+ }
+ .ghibliimg{
+     width:100%;
+     height:300px;
+ }
+ .linkul{
+     text-decoration:none;
+     border-bottom:none;
+     
+  color:#191918;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:0.3s,background 0.5s ease-in;
+  -ms-transition:0.3s,background 0.5s ease-in;
+  -moz-transition:0.3s,background 0.5s ease-in;
+  -webkit-transition:0.3s,background 0.5s ease-in;
+  /* ...and now for the proper property */
+  transition:0.3s,background 0.5s ease-in;
+}
+ .linkul:hover{
+     color:#FEFEF7;
+ }
+ .maintext h1{
+       color:#191918;
+       top:20px;
+       position:relative;
+       font-weight:200;
+         font-family: 'Lato', sans-serif ;
+         font-size:3em;
+        text-decoration:none;
+ }
+ .maintex h1{
+       color:#191918;
+       top:20px;
+       position:relative;
+       font-weight:200;
+         font-family: 'Lato', sans-serif ;
+         font-size:3em;
+         text-decoration:none;
+ }
+body { 
+      background: #e9eced;
+background: #EEDAFF;
+padding-bottom:10px;
+    
+}
+.hometext {
+    position: fixed;
+    margin-left: 0px;
+    width:15.5%;
+    border-right: 1px solid #191918;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+     background-color:rgba(173,152,130,0.8);
+    z-index: 2;
+}
+   p{
+           font-family: 'Lato', sans-serif ;
+           margin-left:23px;
+             margin-right:40px;
+             line-height:180%;
+             position:relative;
+              color:#191918;
+       margin-top:40px;
+    
+      
+         font-family: 'Lato', sans-serif ;
+         font-size:1em;
+
+
+
+   }
+    .maintext h2{
+       color:#191918;
+      margin-top:50px;
+       position:relative;
+       font-weight:400;
+         font-family: 'Lato', sans-serif ;
+         font-size:2em;
+         text-align:center;
+         margin-bottom:0;
+ }
+     .maintex h2{
+       color:#191918;
+       position:relative;
+      
+       position:relative;
+       font-weight:400;
+         font-family: 'Lato', sans-serif ;
+         font-size:2em;
+         text-align:center;
+         margin-bottom:0px;
+ }
+    .headerimg{
+         margin-left:0px;
+    width:100%;
+    height:200px;
+        
+    }
+    .hayao{
+        float:right;
+        margin:10px;
+    }
+    span{
+        float:right;
+    }
+    .nausic{
+         float:right;
+        margin:10px;
+    }
+    .miyazaki{
+        width:190px;
+        height:280px;
+    }
+     
+     a {
+  position: relative;
+  color:#426797;
+  text-decoration: none;
+  -o-transition:0.3s,background 0.5s ease-in;
+  -ms-transition:0.3s,background 0.5s ease-in;
+  -moz-transition:0.3s,background 0.5s ease-in;
+  -webkit-transition:0.3s,background 0.5s ease-in;
+  /* ...and now for the proper property */
+  transition:0.3s,background 0.5s ease-in;
+}
+  .center a:hover{
+     text-decoration:underline;
+ }
+  .maintext a:hover{
+     text-decoration:underline;
+ }
+   .maintext a{
+     text-decoration:none;
+     -o-transition:0.3s,background 0.5s ease-in;
+  -ms-transition:0.3s,background 0.5s ease-in;
+  -moz-transition:0.3s,background 0.5s ease-in;
+  -webkit-transition:0.3s,background 0.5s ease-in;
+  /* ...and now for the proper property */
+  transition:0.3s,background 0.5s ease-in;
+ }
+ .homemanga {
+    position: fixed;
+    margin-left: 0px;
+    width:15.5%;
+    border-right: 1px solid #191918;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+   background-color:rgba(141,201,113,0.8);
+    z-index: 2;
+}
+ .homebio {
+    position: fixed;
+    margin-left: 0px;
+    width:15.5%;
+    border-right: 1px solid #191918;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+   background-color:rgba(186,172,230,0.8); 
+    z-index: 2;
+}
+  .homeart {
+    position: fixed;
+    margin-left: 0px;
+    width:15.5%;
+    border-right: 1px solid #191918;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+      background-color:rgba(188,106,104,0.8);
+      
+    z-index: 2;
+}
+   .homefilm {
+    position: fixed;
+    margin-left: 0px;
+    width:15.5%;
+    border-right: 1px solid #191918;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+       background-color:rgba(230,188,38,0.8);
+      
+    z-index: 2;
+}
+   .mangaheader{
+        
+    width:100%;
+  height:200px;
+        
+    }
+   .header{
+       width:100%;
+   }
+ div.img {
+    margin: 5px;
+    padding: 5px;
+     margin-top:20px;
+     height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+    
+  
+}	
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    height:270px;
+    width:220px;
+    margin-left:30px;
+        
+    
+}
+
+div.img a:hover img {
+    
+}
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 220px;
+  margin-left: 30px;
+     
+}
+.bioheader{
+    width:100%;
+    height:240px;
+}
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.bioimg{
+    float:left;
+    margin:5px;
+    width:500px;
+}
+.test:hover{
+    transform:scale(2,2);
+	transform-origin:0 0;
+}
+.test{ 
+   
+  -o-transition:0.3s,background 0.5s ease-in;
+  -ms-transition:0.3s,background 0.5s ease-in;
+  -moz-transition:0.3s,background 0.5s ease-in;
+  -webkit-transition:0.3s,background 0.5s ease-in;
+  
+  transition:0.3s,background 0.5s ease-in;
+}
+.artimg{
+float:left;
+   margin:20px;
+   margin-top:50px;
+   width:300px;
+   height:200px;
+   margin-left:40px;
+     
+  -o-transition:0.6s,background 0.5s ease-in;
+  -ms-transition:0.6s,background 0.5s ease-in;
+  -moz-transition:0.6s,background 0.5s ease-in;
+  -webkit-transition:0.6s,background 0.5s ease-in;
+  
+  transition:0.6s,background 0.5s ease-in;
+   border:1px solid #000;
+}
+.artimg:hover{
+    border:1px solid #fff;
+
+}
+.learn {
+     
+    
+    width: 100%;
+    height: 100px;
+    opacity:0.7;
+    text-decoration:none;
+     
+    margin-top:0px;
+    padding:0px;
+    -o-transition:1s,background 1s ease-in;
+  -ms-transition:1s,background 1s ease-in;
+  -moz-transition:1s,background 1s ease-in;
+  -webkit-transition:1s,background 1s ease-in;
+  
+  transition:1s,background 1s ease-in;
+}
+.castle{
+    background-image: url('castle in the sky banner.png');
+}
+.ab {
+    background-image: url('grave of the fireflies banner.png');
+}
+.cd {
+    background-image: url('my neighbor tortoro banner.png');
+}
+.ef {
+    background-image: url('kiki banner 2.png');
+}
+.gh {
+    background-image: url('only yesterday banner.png');
+}
+.ij {
+    background-image: url('porco rosso banner.png');
+}
+.kl {
+    background-image: url('pom poko2.png');
+}
+.mn {
+    background-image: url('whisper of the heart banner.png');
+}
+.op {
+    background-image: url('princess mononoke banner.png');
+}
+.qr {
+    background-image: url('my neighbors the yamadas wallpaper.png');
+}
+.st {
+    background-image: url('spirited away banner.png');
+}
+.uv {
+    background-image: url('the cat returns banner.png');
+}
+.wx {
+    background-image: url('Howls moving castle banner.png');
+}
+.yz {
+    background-image: url('Tales from Earthsea banner.png');
+}
+.bc {
+    background-image: url('Ponyo banner.png');
+}
+.de {
+    background-image: url('arietty banner.png');
+}
+.fg {
+    background-image: url('from up on poppy hill banner.png');
+}
+ .zero{
+     margin:20px;
+ }
+ 
+.learn:hover{
+     text-decoration:none;
+     opacity:1;
+     
+}
+.maintex .learn{
+    margin:0px;
+}
+.learn p{
+    text-align:center;
+    color:#fff;
+    position:relative;
+    top:15px;
+    font-size:2.5em;
+    opacity:0.7;
+     -o-transition:1s,background 0.5s ease-in;
+  -ms-transition:1s,background 0.5s ease-in;
+  -moz-transition:1s,background 0.5s ease-in;
+  -webkit-transition:1s,background 0.5s ease-in;
+  
+  transition:1s,background 0.5s ease-in;
+}
+.learn p:hover{
+    opacity:1;
+}
+ 
+ .maintex h1{
+     margin-bottom:40px;
+ }
+ .mangaimg{
+     float:right;
+     width:700px;
+ }
+ .movieimg{
+     float:left;
+     width:334px;
+     height:475px;
+     margin-left:55px;
+     margin-top:0px;
+     margin-right:15px;
+ }
+ .trailer{
+    margin-left:auto;
+    margin-right:5%;
+    display:block;
+  position:relative;
+   float:right;
+   margin-bottom:15px;
+     
+ }
+ .movietext{
+      margin-top:5px;
+      margin-left:5%;
+ }
+ .moviediv{
+     width:100%;
+     background-color:#fa0456;
+     position:absolute;
+  
+     top:0px;
+
+ }
+.fimmy .learn{
+     margin-top:0px;
+     position:relative;
+     top:-20px;
+     opacity:1;
+ }
+.fimmy .learn p{
+    opacity:1;
+}
+ .castlemovie{
+     float:right;
+     margin-right:5%;
+ }
